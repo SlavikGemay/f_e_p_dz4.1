@@ -2,12 +2,7 @@
 
 const userNameInput = prompt("What is your name?");
 
-if (userNameInput === null) {
-    alert('Okay, [noname]!!!');
-}
-else if (
-    !userNameInput.trim()
-) {
+if (!userNameInput?.trim()) {
     alert('Error: invalid name');
 }
 else {
